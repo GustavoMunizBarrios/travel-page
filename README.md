@@ -1,0 +1,1 @@
+Layout of a travel web-page using Tailwind fully responsive.
