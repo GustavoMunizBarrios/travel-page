@@ -24,15 +24,18 @@
         <div id="home">
             <div class="w-full h-3/4">
 
-                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input type="search" name="" id="" class="w-3/4 text-center rounded-full outline-none p-3 shadow-sm transition ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:scale-x-105"  placeholder="San Francisco">
-                    <button class="w-42 rounded-full bg-white text-lg  text-primary font-semibold p-4 shadow-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-white transform translate-y-1 hover:scale-110">
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-16 lg:justify-start lg:w-auto lg:h-auto">
+                    <input type="search" name="" id="" class="w-3/4 text-center rounded-full outline-none p-3 shadow-sm transition ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:scale-x-105 lg:hidden"  placeholder="San Francisco">
+                    <div class="hidden h-auto lg:w-2/3 lg:flex pb-6">
+                        <p class="text-4xl ml-16 font-bold text-black">Encuentra más ubicaciones como esta</p>
+                    </div>
+                    <button class="w-32 rounded-full bg-white text-lg  text-primary font-semibold p-4 shadow-sm transition-all duration-300 ease-in-out hover:bg-primary hover:text-white transform translate-y-1 hover:scale-110 lg:ml-16 lg:w-44">
                         Explorar
                     </button>
                 </div>
 
-                <div class="w-full h-full">
-                    <img src="./dpublic/img/sanFrancisco.jpg" alt="">
+                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                    <img class="lg:hidden" src="./dpublic/img/sanFrancisco.jpg" alt="">
                 </div>
 
             </div>
@@ -72,6 +75,22 @@
                         <p class="text-terciary text-base">La gran ciudad</p>
                     </div>
                 </div>
+                
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+                    <div class="w-full h-2/5 bg-secondary px-4 py-2 rounded-b-lg">
+                        <p class="text-white font-bold text-large">Suiza</p>
+                        <p class="text-white text-base">El mejor chocolate caliente que probarás</p>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-sydney bg-cover bg-center"></div>
+                    <div class="w-full h-2/5 bg-white px-4 py-2 rounded-b-lg">
+                        <p class="text-terciary font-bold text-large">Sydney</p>
+                        <p class="text-terciary text-base">Conoce la famosa Opera </p>
+                    </div>
+                </div>
 
             </div>
             
@@ -79,23 +98,24 @@
 
         <div id="rentas_destacadas" class="px-6 h-auto w-full" >
             <p class="text-3xl text-primary font-semibold pb-6">Rentas destacadas</p>
-            <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
-                <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+            <div class="w-full h-full flex flex-col space-y-6 items-center justify-center lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-10 lg:grid-rows-3">
+
+                <div class="w-full h-[29rem]  bg-chicago bg-cover bg-fixed rounded-xl lg:bg-center lg:col-span-2 lg:col-start-1 lg:bg-local">
                     <p class="CardTitle">Chicago</p>
                     <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina.</p>
                 </div>
 
-                <div class="w-full h-96 bg-LA bg-cover rounded-xl">
+                <div class="w-full h-[29rem] bg-LA bg-fixed bg-cover rounded-xl lg:h-full lg:bg-center row-span-2 lg:col-start-1 lg:row-start-2 lg:row-end-4 lg:bg-local">
                     <p class="CardTitle">Los Angeles</p>
                     <p class="text-sm pl-8 text-white mr-24">4 habitaciones, 3 baños, cocina y piscina privada.</p>
                 </div>
 
-                <div class="w-full h-96 bg-miami bg-cover rounded-xl">
+                <div class="w-full h-[29rem] bg-miami bg-fixed bg-cover rounded-xl lg:bg-center lg:col-start-2 lg:bg-local">
                     <p class="CardTitle">Miami</p>
-                    <p class="text-sm pl-8 text-white mr-24">3 habitaciones, 2 baños, cocina, una increíble vista al mar.</p>
+                    <p class="text-sm pl-8 text-black mr-24">3 habitaciones, 2 baños, cocina, una increíble vista al mar.</p>
                 </div>
 
-                <div class="w-full h-96 bg-bali bg-cover rounded-xl">
+                <div class="w-full h-[29rem] bg-bali bg-fixed bg-cover bg-center rounded-xl lg:bg-center lg:col-start-2 lg:bg-local">
                     <p class="CardTitle">Bali</p>
                     <p class="text-sm pl-8 text-white mr-24">2 habitaciones, 2 baños, cocina, piscina privada.</p>
                 </div>
@@ -153,7 +173,7 @@
         </ul>
 
     </footer>
-    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 place-items-center justify-center">
+    <div id="tab_bar" class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 place-items-center justify-center lg:hidden">
         <a href="#home" class="w-8 h-8">
             <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path class="fill-current text-gray-300" d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
