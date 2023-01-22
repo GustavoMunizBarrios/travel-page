@@ -19,12 +19,34 @@
 
 </head>
 <body class="font-montserrat">
-    <nav></nav>
-    <section class="w-full h-auto">
-        <div id="home">
-            <div class="w-full h-3/4">
+    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-50">
+        <div class="h-auto w-auto ">
+            <p class="text-xl text-primary font-black">Travel</p>
+        </div>
+        <div class="flex space-x-8">
+            <a class="font-bold text-base text-primary" href="#home">Inicio</a>
+            <a class="font-bold text-base text-primary" href="#recomendados">Recomendados</a>
+            <a class="font-bold text-base text-primary" href="#rentas_destacadas">Rentas</a>
+            <a class="font-bold text-base text-primary" href="#faqs">FAQs</a>
+            <a class="font-bold text-base text-primary" href="#sobre_nosotros">Sobre nosotros</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="">
+                <i class="nav-icons fa-search fa-solid text-primary"></i>
+            </a>
+            <a href="./registrationForm.html">
+                <i class="nav-icons fa-user fa-solid text-primary"></i>
+            </a>
+            <a href="">
+                <i class="nav-icons fa-moon fa-solid text-gray-500"></i>
+            </a>
+        </div>
+    </nav>
+    <section class="w-full h-screen">
+        <div class="w-full h-3/4" id="home">
+            <div class="w-full h-full">
 
-                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-16 lg:justify-start lg:w-auto lg:h-auto">
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-24 lg:justify-start lg:w-auto lg:h-auto">
                     <input type="search" name="" id="" class="w-3/4 text-center rounded-full outline-none p-3 shadow-sm transition ease-in-out duration-500 focus-within:shadow-sm focus:ring-2 transform focus:scale-x-105 lg:hidden"  placeholder="San Francisco">
                     <div class="hidden h-auto lg:w-2/3 lg:flex pb-6">
                         <p class="text-4xl ml-16 font-bold text-black">Encuentra más ubicaciones como esta</p>
@@ -34,7 +56,7 @@
                     </button>
                 </div>
 
-                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                <div class="w-full h-full lg:h-full lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
                     <img class="lg:hidden" src="./dpublic/img/sanFrancisco.jpg" alt="">
                 </div>
 
@@ -159,7 +181,7 @@
         </div>
 
     </section>
-    <footer class="w-full h-auto mt-20 mb-20 bg-gray-50 p-6 text-gray-300">
+    <footer class="w-full h-auto mt-20 mb-20 bg-gray-50 p-6 text-gray-300" id="sobre_nosotros">
         <p class="text-lg text-gray-400">Acerca de</p>
         <ul class="pt-3">
             <li class="pb-2">Inversionistas</li>
