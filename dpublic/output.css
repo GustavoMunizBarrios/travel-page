@@ -553,10 +553,6 @@ video {
   margin-top: 2.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .mb-\[3\.5rem\] {
   margin-bottom: 3.5rem;
 }
@@ -613,10 +609,6 @@ video {
   height: 1.5rem;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -639,14 +631,6 @@ video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
-.flex-none {
-  flex: none;
 }
 
 .translate-y-1 {
@@ -736,10 +720,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 
 .rounded-t-lg {
@@ -855,11 +835,6 @@ video {
   padding-right: 1.5rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -878,10 +853,6 @@ video {
 
 .pb-2 {
   padding-bottom: 0.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-center {
@@ -1071,11 +1042,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:-translate-y-4:hover {
-  --tw-translate-y: -1rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1090,12 +1056,6 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:shadow-xl:hover {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus\:scale-x-105:focus {
@@ -1132,12 +1092,6 @@ video {
 .dark .dark\:text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1181,28 +1135,16 @@ video {
     display: none;
   }
 
-  .lg\:h-auto {
-    height: auto;
+  .lg\:h-\[40rem\] {
+    height: 40rem;
   }
 
   .lg\:h-full {
     height: 100%;
   }
 
-  .lg\:h-44 {
-    height: 11rem;
-  }
-
-  .lg\:h-96 {
-    height: 24rem;
-  }
-
-  .lg\:h-\[50rem\] {
-    height: 50rem;
-  }
-
-  .lg\:h-\[40rem\] {
-    height: 40rem;
+  .lg\:h-auto {
+    height: auto;
   }
 
   .lg\:w-auto {
